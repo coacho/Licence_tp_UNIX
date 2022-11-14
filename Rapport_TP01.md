@@ -26,15 +26,15 @@ Redemarer le service ssh avec **service ssh restart**
 Copier la clef ssh depuis la vm sur la machine hôte avec la commande :
  **ssh-copy-id -i ~/.ssh nomduFichierAveclaClef.pub utilisateur_distant@$hôte_distant**
 
-On peux alors se connecter sur la vm depuis la machien hôte avec la commande 
+On peux alors se connecter sur la vm depuis la machine hôte avec la commande 
 : **ssh utilisateur_distant@$hôte_distant**
 ______________________________
  ### 2.3 Nombre de packet
 La commande, dpkg -l | wc -l indique 353 packet sur la machine.
 __________________________
- ### 2.4 Nombre de packet
+ ### 2.4 Space Usage
+<img width="393" alt="Capture TP01_2 4" src="https://user-images.githubusercontent.com/39912074/194924044-ee85577e-ff60-4135-971e-93f8718d099c.PNG">
 
-*capture d'ecran*
 Espace disque utilisé sur la machine
 _____________________________
 
@@ -42,9 +42,9 @@ _____________________________
 
 - **echo** retourne le resulta des variable d'environnement
   
-   ici **echo $LANG** retourne: *fr_FR.UTF-_8* la variable $LANG, les paramètre régionaux
+   ici **echo $LANG** retourne: *en_US.UTF-_8* soit la variable $LANG, la langue du système
 
-   ![Alt text]("C:\Users\launa\Desktop\Cour\Unix\Capture TP01_2.5.PNG")
+  <img width="250" alt="Capture TP01_2 5" src="https://user-images.githubusercontent.com/39912074/194923473-ddd03648-04a3-40f4-abe8-d076968a1621.PNG">
 
 - **hostname** retourne l'hôte de la machine appartient
   **hostname -d** retourne le domaine de auquel appartient la machine
@@ -66,4 +66,12 @@ _____
 ___
 ### 3.1 installation automatique
 
-Une pressed est une version déja configurer d'un OS. On peux en faire une soit même si l'on veux dupliquer l'instalation sur plusieurs machine ou en récuperer une pour simplifier l'instalation.
+Une pressed est une version déja configurer d'un OS. On peux en faire une soit même si l'on veux dupliquer l'instalation sur plusieurs machines ou en récuperer une pour simplifier l'instalation.
+
+### 3.2
+Dans le contexte de cette vm on ne peux que se log en root donc pour changer de mot de passe ils faut taper **sudo bash** puis ***passwd**
+
+<img width="327" alt="Capture TP01_3 2" src="https://user-images.githubusercontent.com/39912074/194931548-bb77ecb8-1041-4794-a0a6-71518b33b3de.PNG">
+
+
+
